@@ -1,3 +1,12 @@
+-- initialize an empty memory bank
+function bank_init()
+	local result = {};
+	for i = 0, 0xFFFF do
+		result[i] = 0x0
+	end
+	return result
+end
+
 -- memory storage locations
 local bank = {};
 bank[0] = bank_init();
@@ -14,15 +23,6 @@ bank[9] = bank_init();
 -- interrupt values
 local INT_MEM_SWAP = 0;
 local INT_MEM_CLONE = 1;
-
--- initialize an empty memory bank
-function bank_init()
-	local result = {};
-	for i = 0, 0xFFFF do
-		result[i] = 0x0
-	end
-	return result
-end
 
 -- swap the current CPU ram with then
 -- memory bank.
