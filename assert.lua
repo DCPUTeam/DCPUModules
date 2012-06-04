@@ -1,9 +1,14 @@
 function assert_handler(state, params)
   -- we expect a single parameter that is an expression.
-  if (#params ~= 1 or params[1].type ~= "STRING") then
+  if (#params ~= 1 or (params[1].type ~= "STRING" and params[1].type ~= "EXPRESSION")) then
     error("error: .ASSERT directive expects single expression parameter.")
   end
-  local expr = expression_create(params[1].value);
+  local expr = nil;
+  if (params[1].type == "STRING") then
+    expr = expression_create(params[1].value);
+  else
+    expr = params[1].value
+  end
 
   -- output a symbol for the expression.
   state:add_symbol("assertion:" .. expr:representation());

@@ -3,6 +3,7 @@ local current_prereq = nil
 local awaiting = {};
 local current = nil
 local current_start = nil
+local all_passed = true
 
 function start_next_prereq(state)
   -- get the next prerequisite in the queue
@@ -122,6 +123,7 @@ function test_handler(state, params)
   -- check to see whether we have an argument or not
   if (#params == 0) then
     -- run all
+    all_passed = true
     tests = get_all_tests(state)
   else
     -- run some
@@ -141,7 +143,7 @@ function symbol_handler(state, symbol)
     -- unit passed
     print("Test '" .. current .. "' passed.")
     current = nil
-    state:_break()
+    state:_break(all_passed)
     start_next_test(state)
   elseif ((symbol:sub(1, #"unit:prerequisite:") == "unit:prerequisite:" or
            symbol:sub(1, #"unit:definition:") == "unit:definition:" or
@@ -162,8 +164,9 @@ function assertion_failure_handler(state, symbol)
   -- a failed assertion means that we have
   -- failed the unit test
   print("Test '" .. current .. "' failed! (see above output)")
+  all_passed = false
   current = nil
-  state:_break()
+  state:_break(all_passed)
   start_next_test(state)
 end
 
