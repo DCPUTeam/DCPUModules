@@ -35,10 +35,21 @@ function precycle_handler(state, pos)
   end
 end
 
+function postcycle_handler(state, pos)
+  -- ensure that the interrupt queue is never turned off
+  -- during an interupt handler
+  if (not state.cpu.irq.enabled and interrupt_active ~= nil and interrupt_return ~= nil) then
+    print("Interrupt queue was turned off while inside an interrupt handler.")
+    print("(caused by instruction just executed)")
+    state:_break(false)
+  end
+end
+
 function setup()
   -- perform setup
   add_hook("interrupt", interrupt_handler)
   add_hook("precycle", precycle_handler)
+  add_hook("postcycle", postcycle_handler)
 end
 
 MODULE = {
