@@ -1,5 +1,5 @@
 -- if the emulator is at a path like: path/to/dtemu.exe
--- then put this in a path like:      path/to/hw/rng.lua
+-- then put this in a path like:      path/to/modules/rng.lua
 
 -- interrupt values
 local INT_GENERATE = 0;
@@ -37,6 +37,8 @@ MODULE = {
   Type = "Hardware",
   Name = "RNG Hardware",
   Version = "1.0"
+  SDescription = "Provides a random number generator device"
+  URL = "http://dcputoolcha.in/docs/modules/rng"
 };
 
 HARDWARE = {
