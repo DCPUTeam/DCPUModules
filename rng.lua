@@ -36,8 +36,8 @@ end
 MODULE = {
   Type = "Hardware",
   Name = "RNG Hardware",
-  Version = "1.0"
-  SDescription = "Provides a random number generator device"
+  Version = "1.0",
+  SDescription = "Provides a random number generator device",
   URL = "http://dcputoolcha.in/docs/modules/rng"
 };
 
