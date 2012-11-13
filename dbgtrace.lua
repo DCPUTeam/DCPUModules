@@ -55,5 +55,7 @@ end
 MODULE = {
    Type = "Debugger",
    Name = "Backtracing",
-   Version = "1.0"
+   Version = "1.0",
+   SDescription = "Simple backtracing debugger command",
+   URL = "http://dcputoolcha.in/docs/modules/list/dbgtrace.html"
 };

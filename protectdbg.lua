@@ -36,6 +36,6 @@ MODULE = {
   Type = "Debugger",
   Name = "Memory Protection Module",
   Version = "1.0",
-  SDescription = "Checks protected memory blocks (.PROTECT) at runtime",
+  SDescription = "Checks protected memory blocks at runtime",
   URL = "http://dcputoolcha.in/docs/modules/list/protect.html"
 };
