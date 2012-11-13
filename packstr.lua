@@ -25,5 +25,7 @@ end
 MODULE = {
    Type = "Preprocessor",
    Name = ".PACKSTR directive",
-   Version = "1.0"
+   Version = "1.0",
+   SDescription = "The .PACKSTR directive",
+   URL = "http://dcputoolcha.in/docs/modules/list/packstr.html"
 };

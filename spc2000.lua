@@ -22,7 +22,9 @@ end
 MODULE = {
   Type = "Hardware",
   Name = "SPC2000",
-  Version = "1.1"
+  Version = "1.1",
+  SDescription = "Official SPC2000 hardware device",
+  URL = "http://dcputoolcha.in/docs/modules/list/spc2000.html"
 };
 
 HARDWARE = {

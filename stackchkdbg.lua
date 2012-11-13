@@ -52,5 +52,7 @@ end
 MODULE = {
   Type = "Debugger",
   Name = "Stack Checking Module",
-  Version = "1.0"
+  Version = "1.0",
+  SDescription = "Checks .STACK directives at runtime",
+  URL = "http://dcputoolcha.in/docs/modules/list/stackchk.html"
 };

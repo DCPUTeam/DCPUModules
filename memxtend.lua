@@ -67,7 +67,9 @@ end
 MODULE = {
 	Type = "Hardware",
 	Name = "MEMXTEND - Physical Memory Extensions",
-	Version = "0.1"
+	Version = "0.1",
+	SDescription = "Physical memory swapping device",
+	URL = "http://dcputoolcha.in/docs/modules/list/memxtend.html"
 };
 
 HARDWARE = {

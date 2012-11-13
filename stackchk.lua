@@ -22,6 +22,8 @@ end
 MODULE = {
   Type = "Preprocessor",
   Name = ".STACK directive",
-  Version = "1.0"
+  Version = "1.0",
+  SDescription = "The .STACK directive",
+  URL = "http://dcputoolcha.in/docs/modules/list/stackchk.html"
 };
 

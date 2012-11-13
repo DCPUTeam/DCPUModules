@@ -84,6 +84,8 @@ end
 MODULE = {
   Type = "Preprocessor",
   Name = "Unit Testing",
-  Version = "1.0"
+  Version = "1.0",
+  SDescription = "The .UNIT and associated directives",
+  URL = "http://dcputoolcha.in/docs/modules/list/units.html"
 };
 

@@ -55,5 +55,7 @@ end
 MODULE = {
   Type = "Debugger",
   Name = "Interrupt Verification Module",
-  Version = "1.0"
+  Version = "1.0",
+  SDescription = "Checks interrupt handlers at runtime",
+  URL = "http://dcputoolcha.in/docs/modules/list/inttrace.html"
 };

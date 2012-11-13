@@ -22,6 +22,8 @@ end
 MODULE = {
   Type = "Preprocessor",
   Name = ".ASSERT directive",
-  Version = "1.0"
+  Version = "1.0",
+  SDescription = "The .ASSERT directive",
+  URL = "http://dcputoolcha.in/docs/modules/list/assert.html"
 };
 

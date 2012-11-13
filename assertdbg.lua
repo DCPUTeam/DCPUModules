@@ -35,5 +35,7 @@ end
 MODULE = {
   Type = "Debugger",
   Name = "Assertion Module",
-  Version = "1.0"
+  Version = "1.0",
+  SDescription = "Checks .ASSERT directives at runtime",
+  URL = "http://dcputoolcha.in/docs/modules/list/assert.html"
 };

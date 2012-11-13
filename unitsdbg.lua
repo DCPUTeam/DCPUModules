@@ -180,5 +180,7 @@ end
 MODULE = {
   Type = "Debugger",
   Name = "Unit Testing",
-  Version = "1.0"
+  Version = "1.0",
+  SDescription = "Performs unit testing at runtime with .UNIT",
+  URL = "http://dcputoolcha.in/docs/modules/list/units.html"
 };

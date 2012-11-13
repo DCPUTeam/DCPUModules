@@ -184,5 +184,7 @@ end
 MODULE = {
 	Type = "Optimizer",
 	Name = "Peephole Optimizer",
-	Version = "1.0"
+	Version = "1.0",
+	SDescription = "The peephole assembly optimizer",
+	URL = "http://dcputoolcha.in/docs/modules/list/peephole.html"
 };

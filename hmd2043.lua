@@ -127,7 +127,9 @@ end
 MODULE = {
 	Type = "Hardware",
 	Name = "HMD2043",
-	Version = "1.1"
+	Version = "1.1",
+	SDescription = "Deprecated HMD2043 hardware device",
+	URL = "http://dcputoolcha.in/docs/modules/list/hmd2043.html"
 };
 
 HARDWARE = {
